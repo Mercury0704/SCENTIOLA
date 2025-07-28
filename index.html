@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scentiola – Every scent, a story suspended in time</title>
+  <meta name="description" content="Scentiola handmade perfumes capturing emotions and stories in every scent. Discover our unique fragrance collections." />
+  <meta name="keywords" content="perfume, handmade perfume, fragrance, Scentiola, emotional scents" />
+  <meta name="author" content="Nawa" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+      background: linear-gradient(to bottom, #fff0f8, #f6eafc);
+    }
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 4px #e0a8d4); }
+      50% { filter: drop-shadow(0 0 12px #d68cc2); }
+    }
+    .pulse-glow {
+      animation: pulseGlow 3s ease-in-out infinite;
+    }
+    .hover-glow:hover {
+      box-shadow: 0 4px 20px rgba(208, 120, 189, 0.4);
+    }
+    .soft-gradient {
+      background: linear-gradient(to right, #fff0f8, #f6eafc);
+    }
+  </style>
+</head>
+<body class="text-[#1a1a1a]">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#hero" class="flex items-center gap-3">
+        <img 
+          src="https://raw.githubusercontent.com/Mercury0704/Images/f5d1ddd11a0fad300ade6aa664ee451dff3d7f38/a_broken_heart_but_there_is_a_small_heart_protruding_and_it_should_glow_broken_heart_with_a_small_h_5id7camxz5wxc9ju3y18_1.png" 
+          alt="Scentiola Logo" 
+          class="w-10 h-10 pulse-glow"
+          aria-hidden="true"
+        />
+        <span class="text-2xl font-bold serif tracking-wide">SCENTIOLA</span>
+      </a>
+      <ul class="hidden md:flex space-x-8 font-semibold text-[#9c27b0]">
+        <li><a href="#hero" class="hover:text-[#ba68c8]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#ba68c8]">About</a></li>
+        <li><a href="#scents" class="hover:text-[#ba68c8]">Scents</a></li>
+        <li><a href="#contact" class="hover:text-[#ba68c8]">Contact</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="menu" class="hidden md:hidden bg-white px-6 pb-4">
+      <ul class="space-y-3 font-semibold text-[#9c27b0]">
+        <li><a href="#hero" class="block hover:text-[#ba68c8]">Home</a></li>
+        <li><a href="#about" class="block hover:text-[#ba68c8]">About</a></li>
+        <li><a href="#scents" class="block hover:text-[#ba68c8]">Scents</a></li>
+        <li><a href="#contact" class="block hover:text-[#ba68c8]">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen flex flex-col justify-center items-center text-center px-4 soft-gradient">
+    <h1 class="text-5xl md:text-7xl font-bold serif tracking-wide mb-4">SCENTIOLA</h1>
+    <p class="text-lg md:text-xl italic text-gray-700 max-w-xl">Every scent, a story suspended in time.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 md:px-20 py-16 bg-[#fff0f8]">
+    <div class="md:flex md:items-center md:gap-16">
+      <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+        <img 
+          src="https://raw.githubusercontent.com/Mercury0704/Images/f5d1ddd11a0fad300ade6aa664ee451dff3d7f38/a_broken_heart_but_there_is_a_small_heart_protruding_and_it_should_glow_broken_heart_with_a_small_h_5id7camxz5wxc9ju3y18_1.png" 
+          alt="Cracked white heart glowing with blue core - Scentiola logo" 
+          class="w-32 pulse-glow"
+        />
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-semibold serif mb-4">The Essence</h2>
+        <p class="text-gray-700 max-w-xl leading-relaxed">
+          Our world isn’t perfect — hearts break, life gets messy. But within every crack, there glows a spark of hope, resilience, and purity.<br /><br />
+          At Scentiola, we bottle that inner glow — crafting clean, honest perfumes that reflect your unique journey, your essence, and the beauty that shines from within.<br /><br />
+          Our scents celebrate imperfection, memory, and the quiet light that never fades.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Scents -->
+  <section id="scents" class="px-6 md:px-20 py-16 bg-[#f6eafc]">
+    <h2 class="text-3xl font-semibold serif mb-8 text-[#9c27b0]">Featured Scents</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <article tabindex="0" class="border rounded-2xl p-6 shadow-md bg-white hover:shadow-xl hover-glow transition-shadow duration-300 focus:outline-none focus:ring-4 focus:ring-[#ce93d8]">
+        <h3 class="text-xl font-bold serif mb-2">Moon Between Us</h3>
+        <p class="text-[#ab47bc] italic text-sm mb-4">A scent of distance, intimacy, and moonlit silence.</p>
+        <p class="text-gray-700 text-sm">
+          <em>with soft hints of bergamot and sandalwood</em>
+        </p>
+      </article>
+      <article tabindex="0" class="border rounded-2xl p-6 shadow-md bg-white hover:shadow-xl hover-glow transition-shadow duration-300 focus:outline-none focus:ring-4 focus:ring-[#ce93d8]">
+        <h3 class="text-xl font-bold serif mb-2">Before the Goodbye</h3>
+        <p class="text-[#ab47bc] italic text-sm mb-4">The moment right before parting — heavy, beautiful, unforgettable.</p>
+        <p class="text-gray-700 text-sm">
+          <em>with whispers of mandarin and vanilla</em>
+        </p>
+      </article>
+      <article tabindex="0" class="border rounded-2xl p-6 shadow-md bg-white hover:shadow-xl hover-glow transition-shadow duration-300 focus:outline-none focus:ring-4 focus:ring-[#ce93d8]">
+        <h3 class="text-xl font-bold serif mb-2">Slipping Through Time</h3>
+        <p class="text-[#ab47bc] italic text-sm mb-4">A memory you can’t hold, only feel — fleeting, like time itself.</p>
+        <p class="text-gray-700 text-sm">
+          <em>with delicate hints of neroli and musk</em>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-20 bg-[#fff0f8]">
+    <h2 class="text-2xl font-semibold serif mb-4 text-[#9c27b0]">Discover your story</h2>
+    <a href="#scents" class="inline-block bg-[#ba68c8] text-white px-6 py-3 rounded-full hover:bg-[#ab47bc] transition">Explore Scents</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="px-6 md:px-20 py-16 bg-[#f6eafc]">
+    <h2 class="text-3xl font-semibold serif mb-8 text-center text-[#9c27b0]">Get in Touch</h2>
+    <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md">
+      <label for="name" class="block mb-2 font-semibold text-gray-700">Name</label>
+      <input type="text" id="name" name="name" required class="w-full mb-6 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#ce93d8]" />
+
+      <label for="email" class="block mb-2 font-semibold text-gray-700">Email</label>
+      <input type="email" id="email" name="email" required class="w-full mb-6 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#ce93d8]" />
+
+      <label for="message" class="block mb-2 font-semibold text-gray-700">Message</label>
+      <textarea id="message" name="message" rows="4" required class="w-full mb-6 px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#ce93d8]"></textarea>
+
+      <button type="submit" class="w-full bg-[#ba68c8] text-white py-3 rounded hover:bg-[#ab47bc] transition font-semibold">Send Message</button>
+    </form>
+  </section>
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
